@@ -43,13 +43,12 @@ function buildDeck() {
     // console.log(hiddenCard);
     // console.log(delerSum);
 
-    while (delerSum < 17) {
+    while (delerSum <= 16) {
         let cardImg = document.createElement("img");
         let card = deck.pop();
         cardImg.src = './cards/' + card + '.png';
         delerSum += getValue(card);
         dealerAce += checkAce(card);
-
         document.getElementById("dealer-cards").append(cardImg);
     };
     
@@ -136,9 +135,9 @@ function buildDeck() {
     return playerSum;
  };
 
- function resultGame () {
+ function restartGame () {
    window.location.reload();
  };
 
- document.getElementById("restart").addEventListener("click", resultGame);
+ document.getElementById("restart").addEventListener("click", restartGame);
 

@@ -6,6 +6,9 @@
 body {
     text-align: center;
     padding: 20px;
+    background: rgb(4, 86, 4);
+    display: flex;
+    flex-direction: column;
 }
 
 #dealer-cards img{
@@ -27,8 +30,21 @@ button {
     border: none;
     cursor: pointer;
     font-size: 22px;
+    display: flex;
+    align-self: center;
+    margin: 10px;
 }
 
 button:hover {
     background: #ccc;
+}
+
+#result {
+    font-size: 2rem;
+    color: #fff;
+}
+
+h2, span {
+    font-size: 2rem;
+    color: #fff;
 }
